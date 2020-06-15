@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+  background-image: url("../../assets/BookImages/15.jpg");
+}
+
+.bookForm {border: 2px solid #2874A6; width: 100%; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  /*background-color: #4CAF50;*/
+  color: white;
+  background: #2CACD3;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+  background: #0000FF;
+}
+
+.darkBtn {
+  background: #1D6E87  ;
+}
+
+#outer
+{
+    width:150%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+}

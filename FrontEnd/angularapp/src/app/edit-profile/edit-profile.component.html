@@ -1,0 +1,94 @@
+<div class="bg">
+<div align="center">
+      <h1><b>Edit Profile</b></h1>
+</div>
+<hr/>
+<div id="registrationView"  style=" padding: 70px;" align="center" >
+
+   <form autocomplete="off" ngNativeValidate (ngSubmit)="editProfile()" class="form-group" style="width:80%" >
+      
+      <div class="row" style=" padding-top: 10px;">
+         <label class="col-sm-2 control-label" align="left">Name :</label>
+         <div class="col-sm-1">
+            <!-- <input class="form-control" name="txtUsername" [(ngModel)]="txtUsername" value="{{ users.username}}" type="text" required> -->
+            <label name="txtUsername" align="left">{{ users.username}} </label>
+            <!-- <label class="asterisk">  </label> -->
+         </div>
+      </div>
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Address Line 1 :</label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtAddressLine1" [(ngModel)]="txtAddressLine1" type="text" value="{{ users.addressLine1}}"required>
+            <label class="asterisk"></label>
+         </div>
+      </div>
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Address Line 2 :</label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtAddressLine2" [(ngModel)]="txtAddressLine2" type="text" value="{{ users.addressLine2}}" >
+         </div>
+      </div>
+
+      <!-- <div class="row" style=" padding-top: 2% 0% 20%; padding-left: 50%;">
+         <label class="col-sm-2 control-label" align="left">Address Line 2 :</label> -->
+         <!-- <div class="col-sm-2">
+            <input class="form-control" align="right" name="txtAddressLine2" [(ngModel)]="txtAddressLine2" type="text" value="{{ users.addressLine2}}" >
+         </div>
+      </div> --> 
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">City :</label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtCity" [(ngModel)]="txtCity" type="text" value="{{ users.city}}" required>
+            <label class="asterisk"></label>
+         </div>
+      </div>
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Telephone(Madatory) : </label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtTelephone_1" [(ngModel)]="txtTelephone_1" type="text" value="{{ users.telephoneNumber_1}}" required>
+            <label class="asterisk"></label>
+         </div>
+      </div>
+
+       <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Telephone(Optional) : </label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtTelephone_2" [(ngModel)]="txtTelephone_2" type="text" value="{{ users.telephoneNumber_2}}" >
+         </div>
+      </div>
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Password :</label>
+         <div class="col-sm-10">
+            <input class="form-control" name="txtPassword" [(ngModel)]="txtPassword" value="{{ users.password}}" type="password" required>
+            <label class="asterisk"></label>
+         </div>
+      </div>
+
+      <div class="row" style=" padding-top: 2%;">
+         <label class="col-sm-2 control-label" align="left">Email :</label>
+         <div class="col-sm-10">
+            <input class="form-control" type="email" name="txtEmail" [(ngModel)]="txtEmail" type="text" value="{{ users.email}}" required>
+         </div>
+         <label class="asterisk"></label>
+      </div>
+          
+      <p></p>
+
+      <div>
+         <!-- <button for="submit-form" type="button" id="registerBtn" class="btn btn-primary" (click)="save()">Register</button> -->
+         <button type="button" class="btn btn-info btn-block" type="submit">Edit Profile</button>
+      </div>
+   
+   </form>
+
+   <div>
+      <label> {{ result}} </label><p>
+   </div>
+</div>
+</div>
+

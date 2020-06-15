@@ -1,0 +1,57 @@
+<div class="bg"> 
+<br/>
+     <div class="row">
+
+    <div id="outer">
+            <div class="inner">
+                <input class="form-control" name="txtSearch" [(ngModel)]="txtSearch" type="text">
+            </div>
+            <div class="inner">
+                <button class="darkBtn"  (click)="searchBook()">Search</button>
+            </div>
+    </div>
+
+    <br/><br/>
+
+    <div class="col-md-3">
+        <div  align="center" style=" padding-top:2%;" vertical-align: middle>
+            <div *ngFor="let category of categories">
+                <button class="darkBtn" (click)="categoryBooks(category.id)">{{ category.name}}</button><p>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="col-md-3">
+        <div  align="center" style=" padding-top:2%;" vertical-align: middle>
+            <button id="Fantasy" class="darkBtn" (click)="categoryBooks('Fantasy')">Fantasy</button><p>
+            <button id="Technology" class="darkBtn"  (click)="categoryBooks('Technology')">Technology</button><p>
+            <button id="Cook Books" class="darkBtn"  (click)="categoryBooks('Cook Books')">Cook Books</button><p>
+            <button id="Maths" class="darkBtn"  (click)="categoryBooks('Maths')">Maths</button><p>
+            <button id="Autobiography" class="darkBtn"  (click)="categoryBooks('Autobiography')">Autobiography</button><p>
+        </div>
+    </div> -->
+
+<div class="container"><br/>
+    <div class="row">	
+        <div *ngFor="let book of books">
+        <form>			
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <img width="200" height="250" src="{{book.imageUrl}}">
+                    <div class ="caption">
+                        <h6><b>{{ book.bookName}}</b></h6>
+						<div class="row">
+                            <div class="col-md-7">
+                            	 {{ book.author}}
+                            </div>
+                        </div>
+                        <button class="btn btn-info btn-block" a routerLink="/book-detail/{{ book.bookId}}">View Book</button>
+						<p><p>
+					</div>
+                </div>
+            </div>
+        </form>
+		</div>
+	</div>
+</div>
+</div>

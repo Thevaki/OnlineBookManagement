@@ -1,0 +1,47 @@
+
+<div class="container"><br/>
+    <div class="row">	
+        <div *ngFor="let user of users">			
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    <div class ="caption">
+                        <h6>{{ user.username}}</h6>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h6> {{ user.role}}</h6>
+                            </div>
+                        </div>
+						<div class="row">
+                            <div class="col-md-7">
+                            	<h6> {{ user.nicNo}}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h6> {{ user.address}}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h6> {{ user.telephoneNo}}</h6>
+                            </div>
+                        </div>
+                        <div  align="center" style=" padding-top:2%;" vertical-align: middle>
+                            <div class="row">
+                                <button id="editUser" class="btn btn-primary"  a routerLink="/">Edit User</button><p><p>
+                            </div>
+                            <div class="row">
+                                <button id="deleteUser" class="btn btn-primary"  a routerLink="/">Delete User</button>
+                            </div>
+                        </div>
+
+						<p><p>
+					</div>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div  align="center" style=" padding-top:2%;" vertical-align: middle>
+    <button id="addUser" class="btn btn-primary" a routerLink="/">Add New User</button><p>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+<!-- <ul>
+  <h3>
+  <li><a routerLink="/login">Sign In</a></li>
+  <li><a routerLink="/books">Books</a></li>
+  <li><a routerLink="/edit-profile">Edit Profile</a></li>
+  <li><a routerLink="/admin-home">Admin</a></li>
+  <li style="float: right;"><a routerLink="/login" (click)="signOut()">SignOut</a></li>
+</h3>
+</ul> -->
+
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<!--   <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+<!-- <nav class="navbar"> -->
+		<div  class="col-md-12">
+			<h3>
+				<a routerLink="/login">SignIn</a>&nbsp;&nbsp;
+  				<a routerLink="/books">Home</a>&nbsp;&nbsp;
+          <a routerLink="/edit-profile">Edit Profile</a>&nbsp;&nbsp;
+  				<a routerLink="/admin-home">Admin</a>&nbsp;&nbsp;         
+  				<a routerLink="/login" style="float: right;" (click)="signOut()">SignOut</a>
+
+  			</h3>
+  	</div>
+</nav>
+
+<router-outlet></router-outlet>
